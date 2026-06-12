@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+
+# VM images
+qemu/*.qcow2
+qemu/*.img
+qemu/*.iso
+
+# Root filesystems
+rootfs/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

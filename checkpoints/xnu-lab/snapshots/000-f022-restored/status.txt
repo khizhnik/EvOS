@@ -1,0 +1,61 @@
+date: 2026-06-16T20:03:39Z
+linux-host: Linux 13DEV 6.1.0-48-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.172-1 (2026-05-15) x86_64 GNU/Linux
+vm-uname: Darwin Maksyms-iMac.local 23.6.0 Darwin Kernel Version 23.6.0: Tue Apr 21 20:19:36 PDT 2026; root:xnu-10063.141.1.712.16~1/RELEASE_X86_64 x86_64
+vm-tree: /Users/khizhnik/Work/EvOS/xnu
+vm-head: 81d27fd7f817efcb22c6433c1dca7a0baed253ef
+vm-branch: evos/xnu-build-lab
+vm-tags: evos-xnu-lab-f022
+git-status-short:
+ M libkern/c++/OSMetaClass.cpp
+?? BUILD/obj/.mach_kernel.timestamp
+?? BUILD/obj/.symbolset.timestamp
+?? BUILD/obj/DEVELOPMENT_X86_64/
+?? BUILD/obj/EXPORT_HDRS/bsd/
+?? BUILD/obj/EXPORT_HDRS/iokit/
+?? BUILD/obj/EXPORT_HDRS/libkern/firehose/
+?? BUILD/obj/EXPORT_HDRS/libkern/libkern/
+?? BUILD/obj/EXPORT_HDRS/libkern/os/alloc_util.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/atomic.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/atomic_private.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/atomic_private_arch.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/atomic_private_impl.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/base.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/base_private.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/cpp_util.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/cxx_safe_buffers.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/hash.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/log.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/log_private.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/object.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/overflow.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/ptrtools.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/reason_private.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/refcnt.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/refcnt_internal.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/system_event_log.h
+?? BUILD/obj/EXPORT_HDRS/libkern/os/trace.h
+?? BUILD/obj/EXPORT_HDRS/osfmk/
+?? BUILD/obj/EXPORT_HDRS/pexpert/
+?? BUILD/obj/EXPORT_HDRS/san/
+?? BUILD/obj/EXPORT_HDRS/security/
+?? BUILD/obj/SETUP/
+?? BUILD/obj/bsd/
+?? BUILD/obj/cscope.genhdrs/
+?? BUILD/obj/san/
+?? BUILD/obj/xnuVersion
+git-diff-stat:
+ libkern/c++/OSMetaClass.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+git-diff-cached-stat:
+
+intentional-untracked-considered:
+<none>
+excluded-build-artifacts:
+- BUILD/obj/*.o
+- BUILD/obj/*.d
+- BUILD/obj/**/*.o
+- BUILD/obj/**/*.d
+- BUILD/obj/san/
+- BUILD/obj/xnuVersion
+- temporary logs
+- .DS_Store

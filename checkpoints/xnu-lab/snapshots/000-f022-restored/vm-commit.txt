@@ -1,0 +1,50 @@
+branch: evos/xnu-build-lab
+commit: 81d27fd7f817efcb22c6433c1dca7a0baed253ef
+base-commit: d8b80295118ef25ac3a784134bcf95cd8e88109f
+tag: evos-xnu-lab-f022
+subject: EvOS: restore validated XNU build-lab compatibility fixes F-002-F-022
+show-stat:
+81d27fd7f EvOS: restore validated XNU build-lab compatibility fixes F-002-F-022
+ BUILD/obj/EXPORT_HDRS/TrustCache/API.h             |   78 ++
+ .../libkern/os/firehose_buffer_private.h           |   45 +
+ BUILD/obj/EXPORT_HDRS/os/firehose_buffer_private.h |   45 +
+ EXTERNAL_HEADERS/TrustCache/API.h                  |   78 ++
+ TrustCache/API.h                                   |   78 ++
+ bsd/TrustCache/API.h                               |   78 ++
+ bsd/dev/dtrace/dtrace_glue.c                       |    6 +-
+ bsd/dev/i386/fasttrap_isa.c                        |    4 -
+ iokit/DriverKit/IOKernelReportStructs.h            |   94 ++
+ iokit/DriverKit/IOKitKeys.h                        |  317 ++++++
+ iokit/DriverKit/IORPC.h                            |  270 +++++
+ iokit/DriverKit/IOReportTypes.h                    |  411 ++++++++
+ iokit/DriverKit/IOReturn.h                         |  204 ++++
+ iokit/DriverKit/IOTypes.h                          |  299 ++++++
+ iokit/DriverKit/OSBoundedArray.h                   |   48 +
+ iokit/DriverKit/OSBoundedArrayRef.h                |   48 +
+ iokit/DriverKit/OSBoundedPtr.h                     |   62 ++
+ iokit/DriverKit/OSBoundedPtrFwd.h                  |   51 +
+ iokit/DriverKit/bounded_array.h                    |  116 ++
+ iokit/DriverKit/bounded_array_ref.h                |  302 ++++++
+ iokit/DriverKit/bounded_ptr.h                      |  710 +++++++++++++
+ iokit/DriverKit/bounded_ptr_fwd.h                  |   41 +
+ iokit/DriverKit/macro_help.h                       |   91 ++
+ iokit/DriverKit/queue_implementation.h             | 1115 ++++++++++++++++++++
+ iokit/DriverKit/safe_allocation.h                  |  490 +++++++++
+ iokit/Kernel/IODMACommand.cpp                      |   18 -
+ iokit/Kernel/IOKitKernelInternal.h                 |    2 +-
+ iokit/Kernel/IOMemoryDescriptor.cpp                |    9 +-
+ iokit/Kernel/IONVRAMV3Handler.cpp                  |    2 +-
+ iokit/Kernel/IOPolledInterface.cpp                 |    3 -
+ iokit/Kernel/IOService.cpp                         |   12 +-
+ iokit/Kernel/IOServicePM.cpp                       |   12 +-
+ libkern/TrustCache/API.h                           |   78 ++
+ libkern/libkern/c++/OSMetaClass.h                  |   18 +-
+ makedefs/MakeInc.def                               |    1 -
+ os/firehose_buffer_private.h                       |   45 +
+ osfmk/TrustCache/API.h                             |   78 ++
+ osfmk/i386/cpu_threads.c                           |    2 -
+ osfmk/i386/i386_timer.c                            |    4 +-
+ osfmk/i386/machine_routines.c                      |    2 +-
+ osfmk/i386/pmap_internal.h                         |    2 -
+ pexpert/i386/pe_serial.c                           |   19 +-
+ 42 files changed, 5306 insertions(+), 82 deletions(-)

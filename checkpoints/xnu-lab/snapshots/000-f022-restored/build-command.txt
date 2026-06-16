@@ -1,0 +1,8 @@
+cd /Users/khizhnik/Work/EvOS/xnu
+
+SDKROOT=$(/usr/bin/xcrun --sdk macosx --show-sdk-path)
+
+RC_DARWIN_KERNEL_VERSION=23.6.0 \
+make SDKROOT="$SDKROOT" \
+  ARCH_CONFIGS=X86_64 \
+  KERNEL_CONFIGS=DEVELOPMENT

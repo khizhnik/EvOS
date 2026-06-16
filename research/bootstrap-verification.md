@@ -12,6 +12,17 @@ This note tracks the minimal checks needed before attempting any macOS installat
 - Verify whether Codex can run local shell commands.
 - Verify whether Codex can interact with the macOS VM only through SSH or shared folders after the VM is installed.
 
+## SSH Access To MacOS VM
+
+Checklist:
+
+- macOS boots
+- Remote Login enabled inside macOS
+- QEMU started with `hostfwd=tcp::10022-:22`
+- host can run: `ssh <macos-user>@localhost -p 10022`
+- host can run: `ssh <macos-user>@localhost -p 10022 sw_vers`
+- host can run: `ssh <macos-user>@localhost -p 10022 uname -a`
+
 ## Control Path Assumption
 
 Preferred future control path:

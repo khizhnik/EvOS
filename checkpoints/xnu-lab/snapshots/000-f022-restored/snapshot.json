@@ -1,0 +1,26 @@
+{
+  "name": "000-f022-restored",
+  "created_utc": "2026-06-16T20:03:39Z",
+  "linux_host": "Linux 13DEV 6.1.0-48-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.172-1 (2026-05-15) x86_64 GNU/Linux",
+  "vm_uname": "Darwin Maksyms-iMac.local 23.6.0 Darwin Kernel Version 23.6.0: Tue Apr 21 20:19:36 PDT 2026; root:xnu-10063.141.1.712.16~1/RELEASE_X86_64 x86_64",
+  "vm_tree": "/Users/khizhnik/Work/EvOS/xnu",
+  "vm_head": "81d27fd7f817efcb22c6433c1dca7a0baed253ef",
+  "vm_branch": "evos/xnu-build-lab",
+  "vm_tag": "evos-xnu-lab-f022",
+  "base_commit": "d8b80295118ef25ac3a784134bcf95cd8e88109f",
+  "subject": "EvOS: restore validated XNU build-lab compatibility fixes F-002-F-022",
+  "validated_fix_range": "F-002..F-022",
+  "excluded_unvalidated_edit": "libkern/c++/OSMetaClass.cpp alloc override",
+  "current_frontier": {
+    "file": "BUILD/obj/EXPORT_HDRS/libkern/libkern/c++/OSMetaClass.h",
+    "line": 1232,
+    "failure_class": "-Winconsistent-missing-override",
+    "symbol": "taggedRelease",
+    "latest_successful_subsystem": "pexpert/i386"
+  },
+  "artifacts": {
+    "tracked_patch": "tracked.patch",
+    "untracked_tar": "untracked.tar.gz",
+    "manifest": "manifest.txt"
+  }
+}
